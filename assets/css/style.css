@@ -1,0 +1,275 @@
+/*This is from the inline styling */
+
+@import url('https://fonts.googleapis.com/css?family=Catamaran');
+
+#learn{
+	height:20px; 
+	width:240px; 
+	padding:15px; 
+	border:4px solid white;
+	background-color:black; 
+	opacity:.7; 
+	color:white;
+}
+
+  .new {
+   margin-left:40%;
+}
+
+.new p {
+    height: 60px;
+    float: left;
+    margin-right: 0.3em;
+  }
+  .new b {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    height: 30px;
+  }
+  span1 {
+    font-family: 'Palanquin Dark', sans-serif;
+    display: inline-block;
+    color: black;
+    font-size:40px;
+    position: relative;
+    white-space: nowrap;
+    top: 0;
+    left: 0;
+    -webkit-animation: move 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: 1s;
+  }
+
+  @keyframes move {
+    0%  { top: 1px; }
+    20% { top: -30px; }
+    40% { top: -60px; }
+    60% { top: -90px; }
+    80% { top: -120px; }
+  }
+
+
+.navbar {
+  background-color: white;
+  opacity: .8;
+  border: 1px solid white;
+}
+.navIcon {
+   height: 30px;
+   width: 30px;
+   float: right;
+}
+
+.helloNav {
+  background-color: white;
+  opacity: .8;
+}
+
+.links {
+  color: black;
+}
+
+#headerwrap {
+  opacity: .9;
+  /*z-index: -1;*/
+  text-align: center;
+  background-color: black;
+  text-shadow: 1px 2px 2px rgba(150, 150, 150, 1);
+  height: auto;
+  width: 100%;
+}
+
+.headerIntroTag { padding: 0 5%; }
+
+.logoOne {
+  width: 25rem;
+  height: 2%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+
+
+header > h2 {
+  color: white;
+  padding-bottom: 60px;
+  font-family: 'Catamaran', sans-serif;
+  letter-spacing:2px;
+
+}
+
+.icon-stack { color: #2eb2ff; }
+.icon-eye { color: #2ecc71; }
+.icon-heart { color: #e74c3c; }
+
+.businessPlanImg { width: 100%; }
+.webDesignImg { float: right; width: 20%; }
+.creativeDevelopment { padding-top: 25px; }
+.productDescriptionImg { width: 100%; }
+
+#team { text-align: center;}
+.teamDiv {
+  padding: 0;
+  display: block;
+  margin-right: 10%;
+}
+
+.divider1 {
+  background-color: #000;
+  opacity:;
+  border: 1px solid white;
+}
+
+/*PICTURES*/
+.mattDiv { padding-right: 20px; }
+.img-circle {
+  height: 120px;
+  width: 120px;
+}
+
+.icon-linkedin {
+  height: 25px;
+  width: 20px;
+  padding-bottom: 6px;
+}
+
+.drewDiv { padding-right: 40px; }
+
+.divider2 {
+  background-color: black;
+  opacity: .8;
+  border: 1px solid white;
+}
+
+.iphone {
+  width: 35%;
+  float: left;
+}
+
+.crossroad { color: #000; }
+
+#greywrap { background-color: #ecf0f1; }
+
+.macbook {
+  width: 70%;
+  float: left;
+}
+
+.questionsTitle {
+  text-align: center;
+  color: black;
+  margin-right: 10%;
+  font-size: 30px;
+  color: #2eb2ff;
+}
+
+.questionsContactBtn {
+  background-color: #2ecc71;
+  border-radius: 2%;
+  border: 1px solid white;
+  width:100px;
+}
+
+.questionsContactLink { color:white; }
+
+.divider3 {
+  background-color: black;
+  opacity: ;
+}
+.digConsultingPtag { color: white; }
+
+/*FIX THIS */
+.divider4 {
+   /*border:1px solid white;*/
+   background-image: url('https://naturalimmix.com/wp-content/uploads/2016/06/colours_small.png');
+   background-color: #fff;
+   opacity: .9;
+}
+
+/*.designCreatesEmotion {
+  color: #000;
+  margin-left:10%;
+}*/
+
+.divider4 p {
+  color: #17272e;
+}
+/*TIL HERE*/
+
+
+.fullService { color: white; }
+
+/*CONTACT*/
+.icon-home,
+.icon-phone,
+.icon-envelop,
+.icon-facebook {
+  color: #fff;
+}
+
+.divider6 {
+  color: #fff;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active { text-decoration: none; }
+
+#contact {
+   background-color: black;
+   opacity: .9;
+   border: 1px solid black;
+}
+
+.ccform {
+  margin-left: 5%;
+  opacity: .8;
+}
+
+.ccfield-prepend { text-align: center; }
+.ccbtn { margin-left: 15%; }
+
+
+/*FOOTER*/
+
+.tailoredForSuccess { text-align: center; }
+
+.newsletter {
+  text-align: center;
+  float: right;
+}
+
+.newsletterPtag { text-align: center; }
+
+.form-horizontal {
+  width: 100%;
+  margin-right: 15%;
+}
+
+.footerLegal {
+  margin-left: 40%;
+  font-size: 21px;
+  padding-top: 300px;
+}
+
+.fa-background { background-color: transparent; }
+.footerLegal { padding-top: 0;}
+
+@media (min-width: 1200px) {
+  .teamDiv { padding-left: 20%; }
+}
+
+@media (min-width: 819px) {
+  .form-horizontal {
+    margin: 0;
+  }
+}
+
+
+
+
+/*END*/

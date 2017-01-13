@@ -1,0 +1,149 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+
+.nb-demo {
+  padding: 30px 0;
+}
+.material-form {
+  max-width:500px;
+  padding: 30px 15px;
+  margin:30px auto 0;
+  display:block;
+  background:#FFF;
+	opacity: .8;
+  overflow: hidden;
+}
+
+.material-form .group {
+  position:relative;
+  margin-bottom:45px;
+}
+.material-form .form-inner {
+  overflow: hidden;
+}
+.material-form form {
+  padding-top: 20px;
+}
+
+.material-form input {
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:100%;
+  border:none;
+  border-bottom:1px solid #f0f0f0;
+}
+.material-form textarea {
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:100%;
+  max-width: 100%;
+  min-width: 100%;
+  border:none;
+  border-bottom:1px solid #f0f0f0;
+}
+.material-form input:focus, .material-form textarea:focus { outline:none; }
+
+/*-------------------labels--------------*/
+.material-form label {
+  color:#999;
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+.material-form input:focus ~ label, .material-form input:valid ~ label,   .material-form textarea:focus ~ label, .material-form textarea:valid ~ label {
+  top:-20px;
+  font-size:14px;
+  color:#000;
+}
+
+.material-form .bar {
+  position:relative;
+ display:block;
+ width:100%;
+}
+.material-form .bar:before, .bar:after {
+  content:'';
+  height:2px;
+  width:0;
+  bottom:-1px;
+  position:absolute;
+  background:#3d3c3c;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+.material-form .bar:before {
+  left:50%;
+}
+.material-form .bar:after {
+  right:50%;
+}
+
+/* active state */
+.material-form input:focus ~ .bar:before, .material-form input:focus ~ .bar:after, .material-form textarea:focus ~ .bar:before, .material-form textarea:focus ~ .bar:after {
+  width:100%;
+}
+
+
+/*-------SUBMIT----------*/
+.material-form input.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  color: #fff;
+  width: auto !important;
+  text-transform: uppercase;
+  font-size: 16px;
+  border-radius: 0;
+  box-shadow: 1px 1px 5px #ddd;
+  transition:all 0.4s ease-in-out;
+  border: 1px solid #6f6f6f;
+  background:#000;
+	opacity: .8;
+}
+.material-form input.btn:hover, .material-form input.btn:focus, .material-form input.btn:active {
+   color: #fff;
+   outline: 0;
+   box-shadow: none;
+}
+
+/*----------------Highlights------------*/
+.material-form .highlight {
+  position:absolute;
+  height:60%;
+  width:100px;
+  top:25%;
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/*---------------on active---------------*/
+.material-form input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/*----------------animation-------------*/
+@-webkit-keyframes inputHighlighter {
+  from { background: #4b4b4b; }
+  to  { width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+  from { background: #4b4b4b; }
+  to  { width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+  from { background: #4b4b4b; }
+  to  { width:0; background:transparent; }
+}
